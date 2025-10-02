@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router';
 
 const Homepage = ({user}) => {
     
@@ -37,7 +38,9 @@ const Homepage = ({user}) => {
       </li>
     </ul>
     <div className="mt-6">
-      <button className="btn btn-primary btn-block">Subscribe</button>
+      <Link to={`/user/${user.id}`}>
+      <button className="btn btn-primary btn-block">See Details</button>
+      </Link>
     </div>
   </div>
                 </div>
